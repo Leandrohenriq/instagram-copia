@@ -1,2 +1,2 @@
 # instagram-copia
- Cópia do loyout instagram
+ Projeto para copiar o layout do instagram com algumas funcionalidades
