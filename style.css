@@ -1,0 +1,325 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  /*Variáveis*/
+  --background: #fafafa;
+  --cor-azul: #3C96ED;
+
+
+}
+
+#menu-superior{
+  width: 100%;
+  border-bottom: 1px solid rgb(192, 191, 191);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-superior img{
+  width: 100px;
+  margin: 20px;
+  padding-top: 9px;
+  transition: 0.5s;
+}
+
+#menu-superior img:hover{
+  width: 105px;
+  transition: 0.5s;
+}
+
+#menu-superior .botao-entrar{
+  width: 70px;
+  height: 30px;
+  background-color: var(--cor-azul);
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-superior .botao-entrar:hover{
+  background-color: #2089eb;
+}
+
+#menu-superior .botao-cadastro{
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  color: var(--cor-azul);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#menu-superior .botao-cadastro:hover{
+  color: rgba(0, 0, 0, 0.76);
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: var(--cor-azul);
+}
+
+#wrapper{
+  height: 100vh;
+}
+
+#container{
+  margin: 0 auto;
+  min-height: 100%;
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.column{
+  flex-grow: 1;
+  width: 50%;
+}
+
+.left{
+  background-image: url(imagens/instagram-celular.png);
+  background-size: 650px;
+  height: 650px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-painel{
+  background-color: #FFF;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.logo-img{
+  width: 175px;
+  margin-top: 40px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="password"], input[type="text"]{
+  background-color: #ffffff;
+  border: 1px solid rgb(236, 234, 234);
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 13px;
+  width: 320px;
+  color: black;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder{
+  color: rgb(165, 164, 164);
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+  outline: 0;
+  border: 1px solid #a1a1a1;
+}
+
+input[type="submit"]{
+  width: 320px;
+  height: 30px;
+  border: 0;
+  background-color: var(--cor-azul);
+  border-radius: 4px;
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.entrar-facebook{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrar-facebook a{
+  color: var(--cor-azul);
+  font-weight: bold;
+}
+
+.esqueci-senha{
+  margin-bottom: 30px;
+}
+
+.esqueci-senha a{
+  color: #29375f;
+}
+
+.cadastro{
+  background-color: #FFF;
+  height: 60px;
+  border: 1px solid rgb(236, 234, 234);
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro p a{
+  font-weight: bold;
+  user-select: none;
+}
+
+.app-download-painel{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.app-buttons{
+  margin-top: 16px;
+}
+
+.app-buttons img{
+  height: 40px;
+  padding: 0 2px;
+}
+
+footer{
+  text-align: center;
+  height: 50px;
+}
+
+footer a{
+  color: rgb(146, 146, 146);
+  margin-right: 7px;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+.text-small{
+  color: rgb(146, 146, 146);
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.text-small p{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+
+
+
+
+/*Página cadastro*/
+
+#container-cadastro{
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mensagem{
+  margin: 10px 70px;
+}
+
+.mensagem span{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #8e8e8e;
+}
+
+.botao-facebook{
+  width: 320px;
+  margin: 10px 0;
+  height: 35px;
+  background-color: var(--cor-azul);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divisor-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.line{
+  height: 1px;
+  background-color: #e6e6e6;
+  width: 35%;
+}
+
+.divisor-tag{
+  margin: 0 2.5%;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+
+/*Fim cadastro*/
+
+
+/*Responsividade*/
+@media(max-width: 850px){
+  .left{
+    display: none;
+  }
+
+  #container{
+    width: 80%;
+  }
+}
+
+
+
+@media(max-width: 560px){
+  #container{
+    width: 90%;
+  }
+
+  #container-cadastro{
+    width: 90%;
+  }
+
+  input[type="text"], input[type="password"], input[type="submit"]{
+    width: 70%;
+  }
+
+  .botao-facebook{
+    width: 70%;
+  }
+}

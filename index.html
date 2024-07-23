@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="imagens/logo-favicon.png" type="image/x-icon">
+  <title>Instagram</title>
+</head>
+<body>
+  
+  <!--Area wrapper - por volta do site inteiro-->
+  <div id="wrapper">
+
+    <header id="menu-superior">
+      <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+      <div class="botoes-superiores">
+        <a href="index.html"><button class="botoes botao-entrar">Entrar</button></a>
+        <a href="cadastro.html"><button class="botoes botao-cadastro">Cadastre-se</button></a>
+      </div>
+    </header>
+
+  <!--Area container - contém as 2 colunas (foto e area de login)-->
+    <div id="container">
+
+      <!--Area esquerda-->
+      <div class="column left">
+        <div class="main"></div>
+      </div>
+      <!--Fim area esquerda-->
+
+      <!--Area direita-->
+      <div class="column right">
+        <!--Painel login-->
+        <div class="login-painel">
+          <div class="logo">
+            <img class="logo-img" src="imagens/logo.png" alt="logo-instagram">
+          </div>
+          <form action="">
+            <input type="text" placeholder="Telefone, nome de usuário ou email" name="username">
+            <input type="password" placeholder="Senha" name="password">
+            <input type="submit" value="Entrar">
+          </form>
+          
+          <div class="divisor-container">
+            <div class="line"></div>
+            <div class="divisor-tag">Ou</div>
+            <div class="line"></div>
+          </div>
+
+          <!--INICIO ENTRAR COM FACEBOOK-->
+            <div class="entrar-facebook">
+              <a href="">Entrar com o Facebook</a>
+            </div>
+          <!--FIM ENTRAR COM FACEBOOK-->
+          <!--INICIO ESQUECI MINHA SENHA-->
+          <div class="esqueci-senha">
+            <a href="">Esqueceu a senha?</a>
+          </div>
+          <!--FIM ESQUECI MINHA SENHA-->
+        </div>
+        <!--Fim Painel login-->
+
+        <!--Painel Cadastre-se-->
+        <div class="cadastro">
+          <p>Não tem uma conta?<a href="cadastro.html"> Cadastre-se</a></p>
+        </div>
+        <!--Fim Painel Cadastre-se-->
+
+        <!--Download imagens-->
+        <div class="app-download-painel">
+          Obtenha o aplicativo.
+          <div class="app-buttons">
+            <a href="#">
+              <img src="imagens/appstore.png" alt="Baixe na AppStore">
+            </a>
+            <a href="#">
+              <img src="imagens/googleplay.png" alt="Baixe na Google Play">
+            </a>
+          </div>
+        </div>
+        <!--Fim Download imagens-->
+
+      </div>
+      <!--Fim area direita-->
+    </div>
+    <!--Fim Container-->
+
+    <!--Rodapé-->
+    <footer>
+      <div class="footer-inner">
+        <a href="#">Meta</a>
+        <a href="#">Sobre</a>
+        <a href="#">Blog</a>
+        <a href="#">Carreiras</a>
+        <a href="#">Ajuda</a>
+        <a href="#">API</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Localizações</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Crregamento de contatos e não usuários</a>
+        <a href="#">Meta Verified</a>
+        <div class="text-small">
+          <p>Português Brasil</p>
+          <p>© 2024 Instagram from Meta</p>
+        </div>
+      </div>
+    </footer>
+    <!--Fim Rodapé-->
+  </div>
+
+</body>
+</html>
